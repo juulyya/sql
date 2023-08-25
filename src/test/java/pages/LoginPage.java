@@ -44,13 +44,12 @@ public class LoginPage {
         return new LoginPage();
     }
 
-    public LoginPage threeTimesLoginDifferentPassword() {
+    public void threeTimesLoginDifferentPassword() {
         login(DataHelper.getAuthInfoFromTestData().getLogin(),DataHelper.generateUser().getPassword());
         loginErrorNotification();
         changePassword(DataHelper.generateUser().getPassword());
         loginErrorNotification();
         blockedUserErrorNotification();
-        return new LoginPage();
     }
 
     public void errorNotificationVisible() {
