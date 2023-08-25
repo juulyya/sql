@@ -46,7 +46,6 @@ public class LoginPage {
 
     public LoginPage threeTimesLoginDifferentPassword() {
         login(DataHelper.getAuthInfoFromTestData().getLogin(),DataHelper.generateUser().getPassword());
-        new LoginPage();
         loginErrorNotification();
         changePassword(DataHelper.generateUser().getPassword());
         loginErrorNotification();
